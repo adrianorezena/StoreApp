@@ -9,9 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    weak var coordinator: Coordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = .white
     }
 
 }
