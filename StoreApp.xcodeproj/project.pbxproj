@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80604D8A2A0D020E00084061 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80604D892A0D020E00084061 /* ProductDetailViewController.swift */; };
 		808CF10E2A0A5E3700D84032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF10D2A0A5E3700D84032 /* AppDelegate.swift */; };
 		808CF1102A0A5E3700D84032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF10F2A0A5E3700D84032 /* SceneDelegate.swift */; };
 		808CF1122A0A5E3700D84032 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF1112A0A5E3700D84032 /* HomeViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80604D892A0D020E00084061 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		808CF10A2A0A5E3700D84032 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808CF10D2A0A5E3700D84032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808CF10F2A0A5E3700D84032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80604D882A0D01E600084061 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				80604D892A0D020E00084061 /* ProductDetailViewController.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
 		808CF1012A0A5E3700D84032 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		808CF13D2A0A600C00D84032 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				80604D882A0D01E600084061 /* ProductDetail */,
 				808CF13E2A0A601C00D84032 /* Home */,
 				808CF13F2A0A616000D84032 /* HomeCoordinator.swift */,
 			);
@@ -215,6 +226,7 @@
 			files = (
 				808CF1122A0A5E3700D84032 /* HomeViewController.swift in Sources */,
 				808CF1402A0A616000D84032 /* HomeCoordinator.swift in Sources */,
+				80604D8A2A0D020E00084061 /* ProductDetailViewController.swift in Sources */,
 				808CF10E2A0A5E3700D84032 /* AppDelegate.swift in Sources */,
 				808CF1102A0A5E3700D84032 /* SceneDelegate.swift in Sources */,
 			);

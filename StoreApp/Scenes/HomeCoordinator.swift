@@ -24,6 +24,12 @@ final class HomeCoordinator: Coordinator {
     
     func start() {
         let vc = HomeViewController()
+        vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
+    }
+    
+    func productDetail() {
+        let vc = ProductDetailViewController()
+        navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
-    weak var coordinator: Coordinator?
+    weak var coordinator: HomeCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
