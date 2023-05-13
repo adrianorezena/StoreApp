@@ -10,13 +10,14 @@
 		80604D8A2A0D020E00084061 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80604D892A0D020E00084061 /* ProductDetailViewController.swift */; };
 		806FA02E2A0FB24700240097 /* StoreAppNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = 806FA02D2A0FB24700240097 /* StoreAppNetwork.docc */; };
 		806FA0342A0FB24700240097 /* StoreAppNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806FA02A2A0FB24700240097 /* StoreAppNetwork.framework */; };
-		806FA03B2A0FB24700240097 /* StoreAppNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA03A2A0FB24700240097 /* StoreAppNetworkTests.swift */; };
 		806FA03C2A0FB24700240097 /* StoreAppNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 806FA02C2A0FB24700240097 /* StoreAppNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		806FA03F2A0FB24700240097 /* StoreAppNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806FA02A2A0FB24700240097 /* StoreAppNetwork.framework */; };
 		806FA0402A0FB24700240097 /* StoreAppNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 806FA02A2A0FB24700240097 /* StoreAppNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		806FA04C2A0FB31D00240097 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA04B2A0FB31D00240097 /* ProductModel.swift */; };
 		806FA04F2A0FB3C900240097 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA04E2A0FB3C900240097 /* HTTPClient.swift */; };
 		806FA0512A0FB3E800240097 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA0502A0FB3E800240097 /* URLSessionHTTPClient.swift */; };
+		806FA0532A0FB43300240097 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA0522A0FB43300240097 /* ProductService.swift */; };
+		806FA0572A0FB47D00240097 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA0562A0FB47D00240097 /* ProductServiceTests.swift */; };
 		808CF10E2A0A5E3700D84032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF10D2A0A5E3700D84032 /* AppDelegate.swift */; };
 		808CF1102A0A5E3700D84032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF10F2A0A5E3700D84032 /* SceneDelegate.swift */; };
 		808CF1122A0A5E3700D84032 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CF1112A0A5E3700D84032 /* HomeViewController.swift */; };
@@ -77,10 +78,13 @@
 		806FA02C2A0FB24700240097 /* StoreAppNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreAppNetwork.h; sourceTree = "<group>"; };
 		806FA02D2A0FB24700240097 /* StoreAppNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = StoreAppNetwork.docc; sourceTree = "<group>"; };
 		806FA0332A0FB24700240097 /* StoreAppNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreAppNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		806FA03A2A0FB24700240097 /* StoreAppNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppNetworkTests.swift; sourceTree = "<group>"; };
 		806FA04B2A0FB31D00240097 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		806FA04E2A0FB3C900240097 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		806FA0502A0FB3E800240097 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		806FA0522A0FB43300240097 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		806FA0562A0FB47D00240097 /* ProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceTests.swift; sourceTree = "<group>"; };
+		806FA0582A0FB4FF00240097 /* StoreAppNetwork.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = StoreAppNetwork.xctestplan; path = StoreAppNetwork/StoreAppNetwork.xctestplan; sourceTree = "<group>"; };
+		806FA0592A0FB5B300240097 /* StoreApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = StoreApp.xctestplan; path = StoreAppTests/StoreApp.xctestplan; sourceTree = "<group>"; };
 		808CF10A2A0A5E3700D84032 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808CF10D2A0A5E3700D84032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808CF10F2A0A5E3700D84032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +154,8 @@
 		806FA0392A0FB24700240097 /* StoreAppNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				806FA03A2A0FB24700240097 /* StoreAppNetworkTests.swift */,
+				806FA0552A0FB44200240097 /* Client */,
+				806FA0542A0FB43900240097 /* Service */,
 			);
 			path = StoreAppNetworkTests;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 		806FA04A2A0FB2C100240097 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				806FA0522A0FB43300240097 /* ProductService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -179,9 +185,26 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		806FA0542A0FB43900240097 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				806FA0562A0FB47D00240097 /* ProductServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		806FA0552A0FB44200240097 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		808CF1012A0A5E3700D84032 = {
 			isa = PBXGroup;
 			children = (
+				806FA0592A0FB5B300240097 /* StoreApp.xctestplan */,
+				806FA0582A0FB4FF00240097 /* StoreAppNetwork.xctestplan */,
 				808CF10C2A0A5E3700D84032 /* StoreApp */,
 				808CF1232A0A5E3800D84032 /* StoreAppTests */,
 				806FA02B2A0FB24700240097 /* StoreAppNetwork */,
@@ -343,7 +366,7 @@
 					};
 					806FA0322A0FB24700240097 = {
 						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 808CF1092A0A5E3700D84032;
+						LastSwiftMigration = 1430;
 					};
 					808CF1092A0A5E3700D84032 = {
 						CreatedOnToolsVersion = 14.3;
@@ -417,6 +440,7 @@
 				806FA04C2A0FB31D00240097 /* ProductModel.swift in Sources */,
 				806FA04F2A0FB3C900240097 /* HTTPClient.swift in Sources */,
 				806FA0512A0FB3E800240097 /* URLSessionHTTPClient.swift in Sources */,
+				806FA0532A0FB43300240097 /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				806FA03B2A0FB24700240097 /* StoreAppNetworkTests.swift in Sources */,
+				806FA0572A0FB47D00240097 /* ProductServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YL3WUNX77R;
@@ -563,9 +588,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rezena.test.StoreAppNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StoreApp";
 			};
 			name = Debug;
 		};
@@ -573,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YL3WUNX77R;
@@ -583,7 +609,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StoreApp";
 			};
 			name = Release;
 		};

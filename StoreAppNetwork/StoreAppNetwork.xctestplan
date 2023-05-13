@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "C36D6775-E7A2-4C55-9A3B-4AD36B0A79F2",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:StoreApp.xcodeproj",
+          "identifier" : "806FA0292A0FB24700240097",
+          "name" : "StoreAppNetwork"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StoreApp.xcodeproj",
+        "identifier" : "806FA0322A0FB24700240097",
+        "name" : "StoreAppNetworkTests"
+      }
+    }
+  ],
+  "version" : 1
+}

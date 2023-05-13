@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "93F112BB-E0E5-48F7-AB89-91A18FDB025C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:StoreApp.xcodeproj",
+          "identifier" : "808CF1092A0A5E3700D84032",
+          "name" : "StoreApp"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StoreApp.xcodeproj",
+      "identifier" : "808CF1092A0A5E3700D84032",
+      "name" : "StoreApp"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:StoreApp.xcodeproj",
+        "identifier" : "808CF11F2A0A5E3800D84032",
+        "name" : "StoreAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
